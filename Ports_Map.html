@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f59c269a7ad84bea8e1c4d50e6d14f9e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+             <h3 align="center" style="font-size:16px"><b>Ports with Less Traffic and More ship Arrivals than Μύρινα</b></h3>
+             
+    
+            <div class="folium-map" id="map_f59c269a7ad84bea8e1c4d50e6d14f9e" ></div>
+        
+</body>
+<script>    
+    
+            var map_f59c269a7ad84bea8e1c4d50e6d14f9e = L.map(
+                "map_f59c269a7ad84bea8e1c4d50e6d14f9e",
+                {
+                    center: [37.0, 24.5],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6.5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_dbf228a882384c02aae1dac669362acd = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_f59c269a7ad84bea8e1c4d50e6d14f9e);
+        
+    
+            var marker_c765465caf2f43d0b63de6ed3189c1ed = L.marker(
+                [39.52, 25.04],
+                {"radius": 70}
+            ).addTo(map_f59c269a7ad84bea8e1c4d50e6d14f9e);
+        
+    
+            var icon_e453c94077f94f5cbd334b8d639e0dcb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "anchor", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c765465caf2f43d0b63de6ed3189c1ed.setIcon(icon_e453c94077f94f5cbd334b8d639e0dcb);
+        
+    
+        var popup_eb7944b4f6484171969f2d4c78942fd0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0a6d9f63d9e44872861f3f95aa6f52be = $(`<div id="html_0a6d9f63d9e44872861f3f95aa6f52be" style="width: 100.0%; height: 100.0%;">Name: Μύρινα<br>Number_of_Ship_Arrivals: 287<br>Average Passenger Count: 79.23<br>Average Vehicle Count: 25.74</div>`)[0];
+            popup_eb7944b4f6484171969f2d4c78942fd0.setContent(html_0a6d9f63d9e44872861f3f95aa6f52be);
+        
+
+        marker_c765465caf2f43d0b63de6ed3189c1ed.bindPopup(popup_eb7944b4f6484171969f2d4c78942fd0)
+        ;
+
+        
+    
+    
+            var marker_b05cab458ef94e01b3efed3e74806d74 = L.marker(
+                [39.1, 23.29],
+                {"radius": 70}
+            ).addTo(map_f59c269a7ad84bea8e1c4d50e6d14f9e);
+        
+    
+            var icon_1423c0a6a4fb44998f9f6f9bbb6d4258 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "anchor", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b05cab458ef94e01b3efed3e74806d74.setIcon(icon_1423c0a6a4fb44998f9f6f9bbb6d4258);
+        
+    
+        var popup_22592eafef8f48c9af79ee2acc28668c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_330818ee49fb42ae9f9f0d8f6e4a105f = $(`<div id="html_330818ee49fb42ae9f9f0d8f6e4a105f" style="width: 100.0%; height: 100.0%;">Name: Σκιάθος<br>Number_of_Ship_Arrivals: 415<br>Average Passenger Count: 75.66<br>Average Vehicle Count: 13.79</div>`)[0];
+            popup_22592eafef8f48c9af79ee2acc28668c.setContent(html_330818ee49fb42ae9f9f0d8f6e4a105f);
+        
+
+        marker_b05cab458ef94e01b3efed3e74806d74.bindPopup(popup_22592eafef8f48c9af79ee2acc28668c)
+        ;
+
+        
+    
+    
+            var marker_cc34d43bf5a045aca86f193fa04ce8a0 = L.marker(
+                [36.25, 25.26],
+                {"radius": 70}
+            ).addTo(map_f59c269a7ad84bea8e1c4d50e6d14f9e);
+        
+    
+            var icon_5afa43dbce6c4ec295c90181f787870a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "anchor", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_cc34d43bf5a045aca86f193fa04ce8a0.setIcon(icon_5afa43dbce6c4ec295c90181f787870a);
+        
+    
+        var popup_512d278b0d5f484994565dec8bf8c367 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5c3ea626071a4973a035c1b1e93c9712 = $(`<div id="html_5c3ea626071a4973a035c1b1e93c9712" style="width: 100.0%; height: 100.0%;">Name: Θήρα<br>Number_of_Ship_Arrivals: 1328<br>Average Passenger Count: 75.58<br>Average Vehicle Count: 6.94</div>`)[0];
+            popup_512d278b0d5f484994565dec8bf8c367.setContent(html_5c3ea626071a4973a035c1b1e93c9712);
+        
+
+        marker_cc34d43bf5a045aca86f193fa04ce8a0.bindPopup(popup_512d278b0d5f484994565dec8bf8c367)
+        ;
+
+        
+    
+    
+            var marker_d64f4f5062ee46cfb6ae8d5e2b62ff8e = L.marker(
+                [37.06, 25.23],
+                {"radius": 70}
+            ).addTo(map_f59c269a7ad84bea8e1c4d50e6d14f9e);
+        
+    
+            var icon_070798a367b645a497b4154ac754dfd2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "anchor", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d64f4f5062ee46cfb6ae8d5e2b62ff8e.setIcon(icon_070798a367b645a497b4154ac754dfd2);
+        
+    
+        var popup_97a9e1459cc4459aa396b385efd59d8b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f47435f6fa6e430d91eb7012f08f0ae1 = $(`<div id="html_f47435f6fa6e430d91eb7012f08f0ae1" style="width: 100.0%; height: 100.0%;">Name: Νάξος<br>Number_of_Ship_Arrivals: 2081<br>Average Passenger Count: 69.55<br>Average Vehicle Count: 11.27</div>`)[0];
+            popup_97a9e1459cc4459aa396b385efd59d8b.setContent(html_f47435f6fa6e430d91eb7012f08f0ae1);
+        
+
+        marker_d64f4f5062ee46cfb6ae8d5e2b62ff8e.bindPopup(popup_97a9e1459cc4459aa396b385efd59d8b)
+        ;
+
+        
+    
+    
+            var marker_79cff73d52bc4d9a912aeca1076a63d0 = L.marker(
+                [37.27, 25.2],
+                {"radius": 70}
+            ).addTo(map_f59c269a7ad84bea8e1c4d50e6d14f9e);
+        
+    
+            var icon_39c0094dae5941beac35a537be73c31c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "anchor", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_79cff73d52bc4d9a912aeca1076a63d0.setIcon(icon_39c0094dae5941beac35a537be73c31c);
+        
+    
+        var popup_ec584d28c33646a48d0a17ccfc7b7884 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7d7e52e69d2941c296537022e3e3eb21 = $(`<div id="html_7d7e52e69d2941c296537022e3e3eb21" style="width: 100.0%; height: 100.0%;">Name: Μύκονος<br>Number_of_Ship_Arrivals: 2141<br>Average Passenger Count: 64.27<br>Average Vehicle Count: 11.54</div>`)[0];
+            popup_ec584d28c33646a48d0a17ccfc7b7884.setContent(html_7d7e52e69d2941c296537022e3e3eb21);
+        
+
+        marker_79cff73d52bc4d9a912aeca1076a63d0.bindPopup(popup_ec584d28c33646a48d0a17ccfc7b7884)
+        ;
+
+        
+    
+    
+            var marker_a425895f4e814a81972dbddc7ca61a1e = L.marker(
+                [38.21, 20.41],
+                {"radius": 70}
+            ).addTo(map_f59c269a7ad84bea8e1c4d50e6d14f9e);
+        
+    
+            var icon_b176a20d38de45ce944239d0549ff4ec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "anchor", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a425895f4e814a81972dbddc7ca61a1e.setIcon(icon_b176a20d38de45ce944239d0549ff4ec);
+        
+    
+        var popup_0af524d51b844d44af1445e707c44062 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8d48be1a7c2640ce8b5d435aeba9752c = $(`<div id="html_8d48be1a7c2640ce8b5d435aeba9752c" style="width: 100.0%; height: 100.0%;">Name: Πισαετός Ιθάκης<br>Number_of_Ship_Arrivals: 409<br>Average Passenger Count: 58.15<br>Average Vehicle Count: 20.55</div>`)[0];
+            popup_0af524d51b844d44af1445e707c44062.setContent(html_8d48be1a7c2640ce8b5d435aeba9752c);
+        
+
+        marker_a425895f4e814a81972dbddc7ca61a1e.bindPopup(popup_0af524d51b844d44af1445e707c44062)
+        ;
+
+        
+    
+    
+            var marker_18fdcd51333246d8b47cb2667619d02e = L.marker(
+                [35.12, 24.05],
+                {"radius": 70}
+            ).addTo(map_f59c269a7ad84bea8e1c4d50e6d14f9e);
+        
+    
+            var icon_6e34f0c6d7764dbd9f4caf53d9eab44d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "anchor", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_18fdcd51333246d8b47cb2667619d02e.setIcon(icon_6e34f0c6d7764dbd9f4caf53d9eab44d);
+        
+    
+        var popup_71952340aa1e4045a01b99292b17d243 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_08ee1755ed8e4142ac8ce7a6ad88eb71 = $(`<div id="html_08ee1755ed8e4142ac8ce7a6ad88eb71" style="width: 100.0%; height: 100.0%;">Name: Λουτρό Χανίων<br>Number_of_Ship_Arrivals: 419<br>Average Passenger Count: 55.39<br>Average Vehicle Count: 0.2</div>`)[0];
+            popup_71952340aa1e4045a01b99292b17d243.setContent(html_08ee1755ed8e4142ac8ce7a6ad88eb71);
+        
+
+        marker_18fdcd51333246d8b47cb2667619d02e.bindPopup(popup_71952340aa1e4045a01b99292b17d243)
+        ;
+
+        
+    
+    
+            var marker_8a39d53c59304bfeb6ec153a1cea6b2e = L.marker(
+                [39.05, 23.42],
+                {"radius": 70}
+            ).addTo(map_f59c269a7ad84bea8e1c4d50e6d14f9e);
+        
+    
+            var icon_5cac56625f764a6996b73c095055dd9e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "anchor", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8a39d53c59304bfeb6ec153a1cea6b2e.setIcon(icon_5cac56625f764a6996b73c095055dd9e);
+        
+    
+        var popup_8b05a2f85c4d4a79a1ec31e61d56aaaa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f2e197b282bd49f3b2802222560ad310 = $(`<div id="html_f2e197b282bd49f3b2802222560ad310" style="width: 100.0%; height: 100.0%;">Name: Σκόπελος<br>Number_of_Ship_Arrivals: 300<br>Average Passenger Count: 54.64<br>Average Vehicle Count: 9.89</div>`)[0];
+            popup_8b05a2f85c4d4a79a1ec31e61d56aaaa.setContent(html_f2e197b282bd49f3b2802222560ad310);
+        
+
+        marker_8a39d53c59304bfeb6ec153a1cea6b2e.bindPopup(popup_8b05a2f85c4d4a79a1ec31e61d56aaaa)
+        ;
+
+        
+    
+    
+            var marker_d4c324e2c0d942dbaced43c5a2fe6d66 = L.marker(
+                [37.21, 23.28],
+                {"radius": 70}
+            ).addTo(map_f59c269a7ad84bea8e1c4d50e6d14f9e);
+        
+    
+            var icon_21f29d0ab5d04c15b8ce4e6488072fc8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "anchor", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d4c324e2c0d942dbaced43c5a2fe6d66.setIcon(icon_21f29d0ab5d04c15b8ce4e6488072fc8);
+        
+    
+        var popup_0a8fe6d9e73445e7ab48b7ff104f1ced = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8369baef137e4c99af3bb12caa1d7689 = $(`<div id="html_8369baef137e4c99af3bb12caa1d7689" style="width: 100.0%; height: 100.0%;">Name: Ύδρα<br>Number_of_Ship_Arrivals: 682<br>Average Passenger Count: 46.81<br>Average Vehicle Count: 0.0</div>`)[0];
+            popup_0a8fe6d9e73445e7ab48b7ff104f1ced.setContent(html_8369baef137e4c99af3bb12caa1d7689);
+        
+
+        marker_d4c324e2c0d942dbaced43c5a2fe6d66.bindPopup(popup_0a8fe6d9e73445e7ab48b7ff104f1ced)
+        ;
+
+        
+    
+    
+            var marker_63c30f34d94c48f4ad45583c96da8e08 = L.marker(
+                [36.04, 28.02],
+                {"radius": 70}
+            ).addTo(map_f59c269a7ad84bea8e1c4d50e6d14f9e);
+        
+    
+            var icon_d930136a061343eab645746666e2cf31 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "anchor", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_63c30f34d94c48f4ad45583c96da8e08.setIcon(icon_d930136a061343eab645746666e2cf31);
+        
+    
+        var popup_cc1727fe91dd413a9ab930db6324abff = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cde14b85dd9b4eaca9aad447ce54750d = $(`<div id="html_cde14b85dd9b4eaca9aad447ce54750d" style="width: 100.0%; height: 100.0%;">Name: Ρόδος<br>Number_of_Ship_Arrivals: 1065<br>Average Passenger Count: 46.4<br>Average Vehicle Count: 11.76</div>`)[0];
+            popup_cc1727fe91dd413a9ab930db6324abff.setContent(html_cde14b85dd9b4eaca9aad447ce54750d);
+        
+
+        marker_63c30f34d94c48f4ad45583c96da8e08.bindPopup(popup_cc1727fe91dd413a9ab930db6324abff)
+        ;
+
+        
+    
+    
+            var marker_48d6a4c1be9044d4bdd1180f538fec55 = L.marker(
+                [36.13, 27.36],
+                {"radius": 70}
+            ).addTo(map_f59c269a7ad84bea8e1c4d50e6d14f9e);
+        
+    
+            var icon_fcbdfeda6df8444b9a9a642083b9faa6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "anchor", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_48d6a4c1be9044d4bdd1180f538fec55.setIcon(icon_fcbdfeda6df8444b9a9a642083b9faa6);
+        
+    
+        var popup_108783a088124ecdacd4e2c2e6389c39 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_be0de585448d4737a2f30aceda50321c = $(`<div id="html_be0de585448d4737a2f30aceda50321c" style="width: 100.0%; height: 100.0%;">Name: Χάλκη Δωδεκανήσου<br>Number_of_Ship_Arrivals: 344<br>Average Passenger Count: 45.45<br>Average Vehicle Count: 0.58</div>`)[0];
+            popup_108783a088124ecdacd4e2c2e6389c39.setContent(html_be0de585448d4737a2f30aceda50321c);
+        
+
+        marker_48d6a4c1be9044d4bdd1180f538fec55.bindPopup(popup_108783a088124ecdacd4e2c2e6389c39)
+        ;
+
+        
+    
+    
+            var marker_0ce0a2dabfe44081b14f2379080f5be3 = L.marker(
+                [37.09, 24.3],
+                {"radius": 70}
+            ).addTo(map_f59c269a7ad84bea8e1c4d50e6d14f9e);
+        
+    
+            var icon_a00ab230cedc4a638b1b64b6c9ab2cf9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "anchor", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0ce0a2dabfe44081b14f2379080f5be3.setIcon(icon_a00ab230cedc4a638b1b64b6c9ab2cf9);
+        
+    
+        var popup_cadfba79ab67445fad1c83596b3b1ca8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c21b3fe6c42c4b65a54774ec5e69ca31 = $(`<div id="html_c21b3fe6c42c4b65a54774ec5e69ca31" style="width: 100.0%; height: 100.0%;">Name: Σέριφος<br>Number_of_Ship_Arrivals: 555<br>Average Passenger Count: 44.64<br>Average Vehicle Count: 10.13</div>`)[0];
+            popup_cadfba79ab67445fad1c83596b3b1ca8.setContent(html_c21b3fe6c42c4b65a54774ec5e69ca31);
+        
+
+        marker_0ce0a2dabfe44081b14f2379080f5be3.bindPopup(popup_cadfba79ab67445fad1c83596b3b1ca8)
+        ;
+
+        
+    
+    
+            var marker_b4dae95fa3d0437daaa802341c01d464 = L.marker(
+                [36.59, 24.4],
+                {"radius": 70}
+            ).addTo(map_f59c269a7ad84bea8e1c4d50e6d14f9e);
+        
+    
+            var icon_b0bcbc8dd86d47709bb40d0a535ef980 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "anchor", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b4dae95fa3d0437daaa802341c01d464.setIcon(icon_b0bcbc8dd86d47709bb40d0a535ef980);
+        
+    
+        var popup_8101f49f5c4e41ffb80473adcf15beac = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cb338f2af76843f18bcd3977dec21c9d = $(`<div id="html_cb338f2af76843f18bcd3977dec21c9d" style="width: 100.0%; height: 100.0%;">Name: Καμάρες Σίφνου<br>Number_of_Ship_Arrivals: 780<br>Average Passenger Count: 40.43<br>Average Vehicle Count: 8.1</div>`)[0];
+            popup_8101f49f5c4e41ffb80473adcf15beac.setContent(html_cb338f2af76843f18bcd3977dec21c9d);
+        
+
+        marker_b4dae95fa3d0437daaa802341c01d464.bindPopup(popup_8101f49f5c4e41ffb80473adcf15beac)
+        ;
+
+        
+    
+    
+            var marker_63e89e280122480c9508f779b537204e = L.marker(
+                [39.09, 23.52],
+                {"radius": 70}
+            ).addTo(map_f59c269a7ad84bea8e1c4d50e6d14f9e);
+        
+    
+            var icon_96f0251ae0e24021813f7e56ce70f7d2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "anchor", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_63e89e280122480c9508f779b537204e.setIcon(icon_96f0251ae0e24021813f7e56ce70f7d2);
+        
+    
+        var popup_9520df1b8e5a4d369f641ffce83324bb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6bcd4e6f266e41ef98a6f492319917c0 = $(`<div id="html_6bcd4e6f266e41ef98a6f492319917c0" style="width: 100.0%; height: 100.0%;">Name: Αλόννησος<br>Number_of_Ship_Arrivals: 354<br>Average Passenger Count: 40.04<br>Average Vehicle Count: 9.39</div>`)[0];
+            popup_9520df1b8e5a4d369f641ffce83324bb.setContent(html_6bcd4e6f266e41ef98a6f492319917c0);
+        
+
+        marker_63e89e280122480c9508f779b537204e.bindPopup(popup_9520df1b8e5a4d369f641ffce83324bb)
+        ;
+
+        
+    
+    
+            var marker_52cc4e4c1b844c30ac859ab3644bc3f9 = L.marker(
+                [37.5, 23.45],
+                {"radius": 70}
+            ).addTo(map_f59c269a7ad84bea8e1c4d50e6d14f9e);
+        
+    
+            var icon_7a22e682b8484858b24e63e2d8060a6a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "anchor", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_52cc4e4c1b844c30ac859ab3644bc3f9.setIcon(icon_7a22e682b8484858b24e63e2d8060a6a);
+        
+    
+        var popup_06aa6aabb09d4e0dbf424f2250acae11 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8db78a4c369746c08361af7bb74392bd = $(`<div id="html_8db78a4c369746c08361af7bb74392bd" style="width: 100.0%; height: 100.0%;">Name: Πόρος Τροιζηνίας<br>Number_of_Ship_Arrivals: 543<br>Average Passenger Count: 38.16<br>Average Vehicle Count: 2.11</div>`)[0];
+            popup_06aa6aabb09d4e0dbf424f2250acae11.setContent(html_8db78a4c369746c08361af7bb74392bd);
+        
+
+        marker_52cc4e4c1b844c30ac859ab3644bc3f9.bindPopup(popup_06aa6aabb09d4e0dbf424f2250acae11)
+        ;
+
+        
+    
+    
+            var marker_043b2e32122d423ebb93a74f0827fff1 = L.marker(
+                [36.43, 25.16],
+                {"radius": 70}
+            ).addTo(map_f59c269a7ad84bea8e1c4d50e6d14f9e);
+        
+    
+            var icon_37e95b8f68a04c8cafac6b0c4425c718 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "anchor", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_043b2e32122d423ebb93a74f0827fff1.setIcon(icon_37e95b8f68a04c8cafac6b0c4425c718);
+        
+    
+        var popup_2d3638a8eff54e2bb3979531cdf84237 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_46fd0e7111274d7cb35128c6f01a3444 = $(`<div id="html_46fd0e7111274d7cb35128c6f01a3444" style="width: 100.0%; height: 100.0%;">Name: Ίος<br>Number_of_Ship_Arrivals: 830<br>Average Passenger Count: 37.52<br>Average Vehicle Count: 3.07</div>`)[0];
+            popup_2d3638a8eff54e2bb3979531cdf84237.setContent(html_46fd0e7111274d7cb35128c6f01a3444);
+        
+
+        marker_043b2e32122d423ebb93a74f0827fff1.bindPopup(popup_2d3638a8eff54e2bb3979531cdf84237)
+        ;
+
+        
+    
+    
+            var marker_ccd25ee5592a49859f578cb1f59bda3c = L.marker(
+                [36.43, 24.26],
+                {"radius": 70}
+            ).addTo(map_f59c269a7ad84bea8e1c4d50e6d14f9e);
+        
+    
+            var icon_0ade968e07a34860b1f0c170a6face42 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "anchor", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ccd25ee5592a49859f578cb1f59bda3c.setIcon(icon_0ade968e07a34860b1f0c170a6face42);
+        
+    
+        var popup_6d8a6a1ea03946798b1a23482496ea85 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a0394661494b48439036389fba70e7f7 = $(`<div id="html_a0394661494b48439036389fba70e7f7" style="width: 100.0%; height: 100.0%;">Name: Αδάμαντας Μήλου<br>Number_of_Ship_Arrivals: 718<br>Average Passenger Count: 37.43<br>Average Vehicle Count: 5.98</div>`)[0];
+            popup_6d8a6a1ea03946798b1a23482496ea85.setContent(html_a0394661494b48439036389fba70e7f7);
+        
+
+        marker_ccd25ee5592a49859f578cb1f59bda3c.bindPopup(popup_6d8a6a1ea03946798b1a23482496ea85)
+        ;
+
+        
+    
+    
+            var marker_a8247737a87a47cdaf78a9042ac74182 = L.marker(
+                [36.56, 25.36],
+                {"radius": 70}
+            ).addTo(map_f59c269a7ad84bea8e1c4d50e6d14f9e);
+        
+    
+            var icon_79f2e1217e14472ca9b1895f4d1a888f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "anchor", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a8247737a87a47cdaf78a9042ac74182.setIcon(icon_79f2e1217e14472ca9b1895f4d1a888f);
+        
+    
+        var popup_bf84d7e9611644f6944f986299234f50 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bb4c5ecb12074467948439c8510bf0f2 = $(`<div id="html_bb4c5ecb12074467948439c8510bf0f2" style="width: 100.0%; height: 100.0%;">Name: Κουφονήσια Κυκλάδων<br>Number_of_Ship_Arrivals: 668<br>Average Passenger Count: 37.31<br>Average Vehicle Count: 3.77</div>`)[0];
+            popup_bf84d7e9611644f6944f986299234f50.setContent(html_bb4c5ecb12074467948439c8510bf0f2);
+        
+
+        marker_a8247737a87a47cdaf78a9042ac74182.bindPopup(popup_bf84d7e9611644f6944f986299234f50)
+        ;
+
+        
+    
+    
+            var marker_16ac1f6df4924cc197cf34cbc0d3fe3b = L.marker(
+                [36.36, 27.5],
+                {"radius": 70}
+            ).addTo(map_f59c269a7ad84bea8e1c4d50e6d14f9e);
+        
+    
+            var icon_5943648c22cc40a3996899b52277e09d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "anchor", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_16ac1f6df4924cc197cf34cbc0d3fe3b.setIcon(icon_5943648c22cc40a3996899b52277e09d);
+        
+    
+        var popup_49e10f947e4c42d49946456f188031f0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cb4e2ae8caba4431ae2fe98349c66489 = $(`<div id="html_cb4e2ae8caba4431ae2fe98349c66489" style="width: 100.0%; height: 100.0%;">Name: Σύμη<br>Number_of_Ship_Arrivals: 431<br>Average Passenger Count: 37.2<br>Average Vehicle Count: 5.16</div>`)[0];
+            popup_49e10f947e4c42d49946456f188031f0.setContent(html_cb4e2ae8caba4431ae2fe98349c66489);
+        
+
+        marker_16ac1f6df4924cc197cf34cbc0d3fe3b.bindPopup(popup_49e10f947e4c42d49946456f188031f0)
+        ;
+
+        
+    
+    
+            var marker_7c1d629422a64355953fdfcb980217b5 = L.marker(
+                [36.5, 25.52],
+                {"radius": 70}
+            ).addTo(map_f59c269a7ad84bea8e1c4d50e6d14f9e);
+        
+    
+            var icon_cba1efcc658140a0b2868bf60e0d18bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "anchor", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7c1d629422a64355953fdfcb980217b5.setIcon(icon_cba1efcc658140a0b2868bf60e0d18bb);
+        
+    
+        var popup_d7bc4295c0e04bb69fb0e303651399a7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ae2a7dbff37141ea9a289dd74dce2071 = $(`<div id="html_ae2a7dbff37141ea9a289dd74dce2071" style="width: 100.0%; height: 100.0%;">Name: Κατάπολα Αμοργού<br>Number_of_Ship_Arrivals: 444<br>Average Passenger Count: 33.43<br>Average Vehicle Count: 5.59</div>`)[0];
+            popup_d7bc4295c0e04bb69fb0e303651399a7.setContent(html_ae2a7dbff37141ea9a289dd74dce2071);
+        
+
+        marker_7c1d629422a64355953fdfcb980217b5.bindPopup(popup_d7bc4295c0e04bb69fb0e303651399a7)
+        ;
+
+        
+    
+    
+            var marker_1539c913bbac413db2dcb2700b2c92c8 = L.marker(
+                [36.52, 27.15],
+                {"radius": 70}
+            ).addTo(map_f59c269a7ad84bea8e1c4d50e6d14f9e);
+        
+    
+            var icon_9d03b307d47b44d9b9676f64bb27f5eb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "anchor", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1539c913bbac413db2dcb2700b2c92c8.setIcon(icon_9d03b307d47b44d9b9676f64bb27f5eb);
+        
+    
+        var popup_9e4f338658e14f04b75837552b07575f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b6a9ccd1dfdf4073844983e4be61d154 = $(`<div id="html_b6a9ccd1dfdf4073844983e4be61d154" style="width: 100.0%; height: 100.0%;">Name: Κως<br>Number_of_Ship_Arrivals: 1077<br>Average Passenger Count: 32.14<br>Average Vehicle Count: 6.28</div>`)[0];
+            popup_9e4f338658e14f04b75837552b07575f.setContent(html_b6a9ccd1dfdf4073844983e4be61d154);
+        
+
+        marker_1539c913bbac413db2dcb2700b2c92c8.bindPopup(popup_9e4f338658e14f04b75837552b07575f)
+        ;
+
+        
+    
+    
+            var marker_0f4fd8d1da2c4ce098e79112ff3602cb = L.marker(
+                [37.16, 23.09],
+                {"radius": 70}
+            ).addTo(map_f59c269a7ad84bea8e1c4d50e6d14f9e);
+        
+    
+            var icon_fbfbbe8a9fc04806bbf72117650c139b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "anchor", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0f4fd8d1da2c4ce098e79112ff3602cb.setIcon(icon_fbfbbe8a9fc04806bbf72117650c139b);
+        
+    
+        var popup_e80eb4ece6304a9d8fe2c2166fd6527a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0d67cd12e90541c89a9ed8aa750ee021 = $(`<div id="html_0d67cd12e90541c89a9ed8aa750ee021" style="width: 100.0%; height: 100.0%;">Name: Σπέτσες<br>Number_of_Ship_Arrivals: 564<br>Average Passenger Count: 31.84<br>Average Vehicle Count: 0.0</div>`)[0];
+            popup_e80eb4ece6304a9d8fe2c2166fd6527a.setContent(html_0d67cd12e90541c89a9ed8aa750ee021);
+        
+
+        marker_0f4fd8d1da2c4ce098e79112ff3602cb.bindPopup(popup_e80eb4ece6304a9d8fe2c2166fd6527a)
+        ;
+
+        
+    
+    
+            var marker_c6b6673ef8db48a293b6d7567d8ad8f9 = L.marker(
+                [36.37, 24.57],
+                {"radius": 70}
+            ).addTo(map_f59c269a7ad84bea8e1c4d50e6d14f9e);
+        
+    
+            var icon_0609f3926799431d8319e1007fb9ece1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "anchor", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c6b6673ef8db48a293b6d7567d8ad8f9.setIcon(icon_0609f3926799431d8319e1007fb9ece1);
+        
+    
+        var popup_375b359a668c4f4fb13932c14e3639bb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ee9b064d87de4d8492b9b0ae82ac2127 = $(`<div id="html_ee9b064d87de4d8492b9b0ae82ac2127" style="width: 100.0%; height: 100.0%;">Name: Φολέγανδρος<br>Number_of_Ship_Arrivals: 436<br>Average Passenger Count: 28.99<br>Average Vehicle Count: 4.5</div>`)[0];
+            popup_375b359a668c4f4fb13932c14e3639bb.setContent(html_ee9b064d87de4d8492b9b0ae82ac2127);
+        
+
+        marker_c6b6673ef8db48a293b6d7567d8ad8f9.bindPopup(popup_375b359a668c4f4fb13932c14e3639bb)
+        ;
+
+        
+    
+    
+            var marker_d6cfed2bf69d4a69996f29f624d73536 = L.marker(
+                [37.37, 26.18],
+                {"radius": 70}
+            ).addTo(map_f59c269a7ad84bea8e1c4d50e6d14f9e);
+        
+    
+            var icon_91c241c1a3c344cd86b79e924c4fca32 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "anchor", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d6cfed2bf69d4a69996f29f624d73536.setIcon(icon_91c241c1a3c344cd86b79e924c4fca32);
+        
+    
+        var popup_2879228d2fd441ac9086d0123ce73d0e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f0abfd4075fb43e782cf4508695718c9 = $(`<div id="html_f0abfd4075fb43e782cf4508695718c9" style="width: 100.0%; height: 100.0%;">Name: Άγιος Κήρυκος<br>Number_of_Ship_Arrivals: 456<br>Average Passenger Count: 24.35<br>Average Vehicle Count: 5.18</div>`)[0];
+            popup_2879228d2fd441ac9086d0123ce73d0e.setContent(html_f0abfd4075fb43e782cf4508695718c9);
+        
+
+        marker_d6cfed2bf69d4a69996f29f624d73536.bindPopup(popup_2879228d2fd441ac9086d0123ce73d0e)
+        ;
+
+        
+    
+    
+            var marker_160cb208bf1844b48d743e1b53e515b5 = L.marker(
+                [37.19, 26.33],
+                {"radius": 70}
+            ).addTo(map_f59c269a7ad84bea8e1c4d50e6d14f9e);
+        
+    
+            var icon_5f4cbd2ed1334dcd893e5bb84816e1d3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "anchor", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_160cb208bf1844b48d743e1b53e515b5.setIcon(icon_5f4cbd2ed1334dcd893e5bb84816e1d3);
+        
+    
+        var popup_e7efd4497bb34e0aaf95242b047e425a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cc662cd77e3e478dbe4668a58751dd67 = $(`<div id="html_cc662cd77e3e478dbe4668a58751dd67" style="width: 100.0%; height: 100.0%;">Name: Πάτμος<br>Number_of_Ship_Arrivals: 1161<br>Average Passenger Count: 22.63<br>Average Vehicle Count: 3.5</div>`)[0];
+            popup_e7efd4497bb34e0aaf95242b047e425a.setContent(html_cc662cd77e3e478dbe4668a58751dd67);
+        
+
+        marker_160cb208bf1844b48d743e1b53e515b5.bindPopup(popup_e7efd4497bb34e0aaf95242b047e425a)
+        ;
+
+        
+    
+    
+            var marker_af705bd15253491e9f43f1dbca6c6c10 = L.marker(
+                [36.37, 27.08],
+                {"radius": 70}
+            ).addTo(map_f59c269a7ad84bea8e1c4d50e6d14f9e);
+        
+    
+            var icon_0130d6f0177b43598bb3a32ce99b5b56 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "anchor", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_af705bd15253491e9f43f1dbca6c6c10.setIcon(icon_0130d6f0177b43598bb3a32ce99b5b56);
+        
+    
+        var popup_d58b0593f8bf49b8b6892dd759ab0d04 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e683451fe35d4c52b3466de2c2b108b0 = $(`<div id="html_e683451fe35d4c52b3466de2c2b108b0" style="width: 100.0%; height: 100.0%;">Name: Νίσυρος<br>Number_of_Ship_Arrivals: 295<br>Average Passenger Count: 20.34<br>Average Vehicle Count: 4.53</div>`)[0];
+            popup_d58b0593f8bf49b8b6892dd759ab0d04.setContent(html_e683451fe35d4c52b3466de2c2b108b0);
+        
+
+        marker_af705bd15253491e9f43f1dbca6c6c10.bindPopup(popup_d58b0593f8bf49b8b6892dd759ab0d04)
+        ;
+
+        
+    
+    
+            var marker_d17470c3ce5d4670974b9b0f2476dcf3 = L.marker(
+                [36.47, 24.35],
+                {"radius": 70}
+            ).addTo(map_f59c269a7ad84bea8e1c4d50e6d14f9e);
+        
+    
+            var icon_dfd1c79adfcf49139bd38606fa9ebd1a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "anchor", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d17470c3ce5d4670974b9b0f2476dcf3.setIcon(icon_dfd1c79adfcf49139bd38606fa9ebd1a);
+        
+    
+        var popup_d16e96ef750543f58ff3a10d0185b1b2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_01a3bc17f8814357868121fd2d32adb0 = $(`<div id="html_01a3bc17f8814357868121fd2d32adb0" style="width: 100.0%; height: 100.0%;">Name: Κίμωλος<br>Number_of_Ship_Arrivals: 307<br>Average Passenger Count: 20.16<br>Average Vehicle Count: 5.9</div>`)[0];
+            popup_d16e96ef750543f58ff3a10d0185b1b2.setContent(html_01a3bc17f8814357868121fd2d32adb0);
+        
+
+        marker_d17470c3ce5d4670974b9b0f2476dcf3.bindPopup(popup_d16e96ef750543f58ff3a10d0185b1b2)
+        ;
+
+        
+    
+    
+            var marker_9d89db8cb3664e2aa647528db1afdfa0 = L.marker(
+                [36.57, 26.59],
+                {"radius": 70}
+            ).addTo(map_f59c269a7ad84bea8e1c4d50e6d14f9e);
+        
+    
+            var icon_6ab8e710051c43198e2c474ec05cc610 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "anchor", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9d89db8cb3664e2aa647528db1afdfa0.setIcon(icon_6ab8e710051c43198e2c474ec05cc610);
+        
+    
+        var popup_aa4e1c2b895f4596863102ca904f5616 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d6e2ede3170547639419fb4f507182e4 = $(`<div id="html_d6e2ede3170547639419fb4f507182e4" style="width: 100.0%; height: 100.0%;">Name: Κάλυμνος<br>Number_of_Ship_Arrivals: 1089<br>Average Passenger Count: 19.73<br>Average Vehicle Count: 2.89</div>`)[0];
+            popup_aa4e1c2b895f4596863102ca904f5616.setContent(html_d6e2ede3170547639419fb4f507182e4);
+        
+
+        marker_9d89db8cb3664e2aa647528db1afdfa0.bindPopup(popup_aa4e1c2b895f4596863102ca904f5616)
+        ;
+
+        
+    
+    
+            var marker_68c6017533ab48a38f3d559db6f8c95c = L.marker(
+                [35.22, 23.96],
+                {"radius": 70}
+            ).addTo(map_f59c269a7ad84bea8e1c4d50e6d14f9e);
+        
+    
+            var icon_d673727d904a498898d3da1d4390c6c8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "anchor", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_68c6017533ab48a38f3d559db6f8c95c.setIcon(icon_d673727d904a498898d3da1d4390c6c8);
+        
+    
+        var popup_22f3967a96f94d64a79680436191b851 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e0c69f7cac4b4a9da23a83adebebc854 = $(`<div id="html_e0c69f7cac4b4a9da23a83adebebc854" style="width: 100.0%; height: 100.0%;">Name: Αγία Ρουμέλη Χανίων<br>Number_of_Ship_Arrivals: 505<br>Average Passenger Count: 19.51<br>Average Vehicle Count: 1.58</div>`)[0];
+            popup_22f3967a96f94d64a79680436191b851.setContent(html_e0c69f7cac4b4a9da23a83adebebc854);
+        
+
+        marker_68c6017533ab48a38f3d559db6f8c95c.bindPopup(popup_22f3967a96f94d64a79680436191b851)
+        ;
+
+        
+    
+    
+            var marker_4225cccc08624f97bc8ad4ad207fe8cd = L.marker(
+                [37.08, 26.51],
+                {"radius": 70}
+            ).addTo(map_f59c269a7ad84bea8e1c4d50e6d14f9e);
+        
+    
+            var icon_961a9a6d407a4cc7937093e8acba9b79 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "anchor", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4225cccc08624f97bc8ad4ad207fe8cd.setIcon(icon_961a9a6d407a4cc7937093e8acba9b79);
+        
+    
+        var popup_8718c6e990a74ad0ada4c36581abafb3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d6dfb0f75dec4d3586d10f0364e73df7 = $(`<div id="html_d6dfb0f75dec4d3586d10f0364e73df7" style="width: 100.0%; height: 100.0%;">Name: Λακκί Λέρου<br>Number_of_Ship_Arrivals: 1011<br>Average Passenger Count: 19.37<br>Average Vehicle Count: 3.42</div>`)[0];
+            popup_8718c6e990a74ad0ada4c36581abafb3.setContent(html_d6dfb0f75dec4d3586d10f0364e73df7);
+        
+
+        marker_4225cccc08624f97bc8ad4ad207fe8cd.bindPopup(popup_8718c6e990a74ad0ada4c36581abafb3)
+        ;
+
+        
+    
+    
+            var marker_b66e50965b034c278c736c0de3132e13 = L.marker(
+                [36.25, 27.22],
+                {"radius": 70}
+            ).addTo(map_f59c269a7ad84bea8e1c4d50e6d14f9e);
+        
+    
+            var icon_9e213d449dcb492d8f92d541283b7674 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "anchor", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b66e50965b034c278c736c0de3132e13.setIcon(icon_9e213d449dcb492d8f92d541283b7674);
+        
+    
+        var popup_1e0e5400e3274c6bafbbfc8d30c00858 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b0bf9ca7b0a640989e0d00e6ad6c51d6 = $(`<div id="html_b0bf9ca7b0a640989e0d00e6ad6c51d6" style="width: 100.0%; height: 100.0%;">Name: Τήλος<br>Number_of_Ship_Arrivals: 346<br>Average Passenger Count: 18.75<br>Average Vehicle Count: 2.67</div>`)[0];
+            popup_1e0e5400e3274c6bafbbfc8d30c00858.setContent(html_b0bf9ca7b0a640989e0d00e6ad6c51d6);
+        
+
+        marker_b66e50965b034c278c736c0de3132e13.bindPopup(popup_1e0e5400e3274c6bafbbfc8d30c00858)
+        ;
+
+        
+    
+    
+            var marker_af58a7f6284a4befbb8d967558d9c608 = L.marker(
+                [37.3, 26.3],
+                {"radius": 70}
+            ).addTo(map_f59c269a7ad84bea8e1c4d50e6d14f9e);
+        
+    
+            var icon_c1498077afc8473197be273bc0a98261 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "anchor", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_af58a7f6284a4befbb8d967558d9c608.setIcon(icon_c1498077afc8473197be273bc0a98261);
+        
+    
+        var popup_e9974679e16e4ecf9e2fd42a7170405e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_99761bd0b0d9467d8488d8c8aa053aa6 = $(`<div id="html_99761bd0b0d9467d8488d8c8aa053aa6" style="width: 100.0%; height: 100.0%;">Name: Φούρνοι Κορσεών<br>Number_of_Ship_Arrivals: 435<br>Average Passenger Count: 17.16<br>Average Vehicle Count: 2.51</div>`)[0];
+            popup_e9974679e16e4ecf9e2fd42a7170405e.setContent(html_99761bd0b0d9467d8488d8c8aa053aa6);
+        
+
+        marker_af58a7f6284a4befbb8d967558d9c608.bindPopup(popup_e9974679e16e4ecf9e2fd42a7170405e)
+        ;
+
+        
+    
+    
+            var marker_3cb90a6b49ae4a78aa5587d0a2894873 = L.marker(
+                [37.17, 26.46],
+                {"radius": 70}
+            ).addTo(map_f59c269a7ad84bea8e1c4d50e6d14f9e);
+        
+    
+            var icon_dcdd1a77a40e4051a373c1cb43c6bf23 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "anchor", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3cb90a6b49ae4a78aa5587d0a2894873.setIcon(icon_dcdd1a77a40e4051a373c1cb43c6bf23);
+        
+    
+        var popup_0967bbd704b14259a8f634695f8c710a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0b25eb71ecab4a7c8995b7922f226ff9 = $(`<div id="html_0b25eb71ecab4a7c8995b7922f226ff9" style="width: 100.0%; height: 100.0%;">Name: Λειψοί<br>Number_of_Ship_Arrivals: 772<br>Average Passenger Count: 10.82<br>Average Vehicle Count: 1.31</div>`)[0];
+            popup_0967bbd704b14259a8f634695f8c710a.setContent(html_0b25eb71ecab4a7c8995b7922f226ff9);
+        
+
+        marker_3cb90a6b49ae4a78aa5587d0a2894873.bindPopup(popup_0967bbd704b14259a8f634695f8c710a)
+        ;
+
+        
+    
+    
+            var marker_9cfa1ba96db645f2b77f280300513ef0 = L.marker(
+                [37.42, 26.57],
+                {"radius": 70}
+            ).addTo(map_f59c269a7ad84bea8e1c4d50e6d14f9e);
+        
+    
+            var icon_93f78bbda22648078c597696006278b4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "anchor", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9cfa1ba96db645f2b77f280300513ef0.setIcon(icon_93f78bbda22648078c597696006278b4);
+        
+    
+        var popup_fddf78b8365c4bd4bc09f4e9eaf2e157 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_26b3c4b9298d40d195238ff4f8906b5e = $(`<div id="html_26b3c4b9298d40d195238ff4f8906b5e" style="width: 100.0%; height: 100.0%;">Name: Πυθαγόρειο Σάμου<br>Number_of_Ship_Arrivals: 476<br>Average Passenger Count: 10.28<br>Average Vehicle Count: 1.15</div>`)[0];
+            popup_fddf78b8365c4bd4bc09f4e9eaf2e157.setContent(html_26b3c4b9298d40d195238ff4f8906b5e);
+        
+
+        marker_9cfa1ba96db645f2b77f280300513ef0.bindPopup(popup_fddf78b8365c4bd4bc09f4e9eaf2e157)
+        ;
+
+        
+    
+</script>
